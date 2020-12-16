@@ -1,0 +1,31 @@
+{
+  "name": "gdv01-playground",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc && cp src/index.html build/src",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seidel-Michael/gdv01-playground.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Seidel-Michael/gdv01-playground/issues"
+  },
+  "homepage": "https://github.com/Seidel-Michael/gdv01-playground#readme",
+  "devDependencies": {
+    "typescript": "^4.0.3",
+    "gts": "^3.0.3",
+    "@types/node": "^14.11.2"
+  }
+}

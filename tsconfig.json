@@ -1,0 +1,19 @@
+{
+  "extends": "./node_modules/gts/tsconfig-google.json",
+  "include": [
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ],
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "build",
+    "target": "es2016",
+    "sourceMap": true,
+    "lib": [
+        "es2016",
+        "dom"
+    ],
+    "noUnusedLocals": true,
+    "module": "commonjs"
+}
+}
